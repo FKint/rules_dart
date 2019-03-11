@@ -39,7 +39,6 @@ dart_web_application = rule(
         ),
         "data": attr.label_list(
             allow_files = True,
-            cfg = "data",
         ),
         "deps": attr.label_list(providers = ["dart"]),
         "create_packages_dir": attr.bool(default = True),

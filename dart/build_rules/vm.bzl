@@ -44,7 +44,6 @@ _dart_vm_binary_attrs = dicts.add(internal_dart_vm.common_attrs, {
     ),
     "data": attr.label_list(
         allow_files = True,
-        cfg = "data",
     ),
     "deps": attr.label_list(providers = ["dart"]),
     "snapshot": attr.bool(default = True),
@@ -95,7 +94,6 @@ dart_vm_test = rule(
         ),
         "data": attr.label_list(
             allow_files = True,
-            cfg = "data",
         ),
         "deps": attr.label_list(providers = ["dart"]),
         "_dart_vm": attr.label(
